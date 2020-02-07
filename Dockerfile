@@ -1,2 +1,5 @@
-FROM ubuntu
-RUN while true; do echo 1; done
+FROM centos
+
+RUN yum update -y 
+RUN yum install httpd -y
+CMD [“echo”,”Image created”] 
